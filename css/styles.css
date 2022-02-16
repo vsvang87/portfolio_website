@@ -239,11 +239,17 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
+.img-box {
+  text-align: center;
+  width: 100%;
+  height: 50%;
+}
 .my-project-box {
   padding: 5px 15px;
 }
 .my-project-box h3 {
   text-align: center;
+  padding-bottom: 1.5rem;
 }
 @media (max-width: 800px) {
   .project-container {
@@ -269,6 +275,41 @@ h3 {
   font-size: 1.2rem;
 }
 /* Skills Section */
+
+.inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+}
+.skills h3 {
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 2rem;
+}
+.inner-skill {
+  width: 500px;
+}
+.inner .inner-skill {
+  padding: 1.5rem 1.5rem;
+}
+.inner-skill img {
+  max-width: 150px;
+  max-height: 150px;
+  padding-bottom: 1.5rem;
+}
+@media (max-width: 780px) {
+  .inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .inner-skill {
+    text-align: center;
+    align-items: center;
+  }
+}
 
 /* Footer */
 .footer {
