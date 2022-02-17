@@ -192,18 +192,32 @@ body {
   padding: 3rem 0;
 }
 .inner-container {
+  width: 100%;
+  background-color: #f76b8a;
+}
+
+.pic-container {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   flex-wrap: wrap;
-  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0 2rem;
 }
 .pic img {
   width: 400px;
   height: 400px;
-  border-radius: 40px 40px;
-  padding: 1rem 0;
+  margin: 2rem 0;
+  padding: 0rem 1rem;
   cursor: pointer;
+  border-radius: 60px 60px;
+}
+.pic img:hover {
+  z-index: 1;
+  transform: scale(1.1);
+  transition: 0.4s ease;
+
+  animation: scale 0.4s linear;
+  animation-fill-mode: forwards;
 }
 .pic p {
   font-size: 1.2rem;
@@ -229,7 +243,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 4rem 0;
-  height: 30vh;
+  height: 40vh;
   background-color: var(--second-color);
   color: var(--first-color);
 }
